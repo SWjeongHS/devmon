@@ -182,36 +182,36 @@ void LevelUp(int levelUP,int monNum){
     for(int i=0; i<levelUP;i++){
         if(monNum==1){
             myDevMon1.level+=1;
-            myDevMon1.max_hp+=100;
-            myDevMon1.max_mp+=100;
+            myDevMon1.max_hp+=500;
+            myDevMon1.max_mp+=500;
             myDevMon1.hp+=100;
             myDevMon1.mp+=100;
-            myDevMon1.atk+=100;
-            myDevMon1.S_atk+=100;
+            myDevMon1.atk+=500;
+            myDevMon1.S_atk+=500;
             system("clear");
             printf("%s의 레벨이 올랐다!\n",myDevMon1.name);
             printImage(14);
         }
         if(monNum==2){
             myDevMon2.level+=1;
-            myDevMon2.max_hp+=100;
-            myDevMon2.max_mp+=100;
-            myDevMon2.hp+=100;
-            myDevMon2.mp+=100;
-            myDevMon2.atk+=100;
-            myDevMon2.S_atk+=100;
+            myDevMon2.max_hp+=500;
+            myDevMon2.max_mp+=500;
+            myDevMon2.hp+=500;
+            myDevMon2.mp+=500;
+            myDevMon2.atk+=500;
+            myDevMon2.S_atk+=500;
             system("clear");
             printf("%s의 레벨이 올랐다!\n",myDevMon2.name);
             printImage(14);
         }
         if(monNum==3){
             myDevMon3.level+=1;
-            myDevMon3.max_hp+=100;
-            myDevMon3.max_mp+=100;
-            myDevMon3.hp+=100;
-            myDevMon3.mp+=100;
-            myDevMon3.atk+=100;
-            myDevMon3.S_atk+=100;
+            myDevMon3.max_hp+=500;
+            myDevMon3.max_mp+=500;
+            myDevMon3.hp+=500;
+            myDevMon3.mp+=500;
+            myDevMon3.atk+=500;
+            myDevMon3.S_atk+=500;
             system("clear");
             printf("%s의 레벨이 올랐다!\n",myDevMon3.name);            
             printImage(14);
@@ -734,7 +734,7 @@ void useItem(int useTime){
 int bossDie(){
     if(bossDevmon.hp<=0){
         system("clear");
-        printf("리하복 교수를 무찔렀다!");
+        printf("리하복 교수를 무찔렀다!\n");
         printf("나 하나의 희생으로 이런 수준의 개발자를 만들었다면... 그걸로 된거야... 끄덕... \n");
         sleep(2);
         system("clear");
@@ -903,7 +903,8 @@ void bossBattle(){
             system("clear");
             printf("리하복 교수의 턴!\n");
             printf("쓸모 없는 짓은 다 했나? 이제 아름다운 코드란 걸 보여주지!\n");
-
+            sleep(1);
+            system("clear");
             if(bossSATK==0){
                 printf("리하복 교수가 광역 공격을 시전했다! 전원에게 %d의 피해!\n",bossDMG+500);
                 printImage(3);

@@ -1558,7 +1558,7 @@ void eventOccur(int isClass){
     }
 
     if(isClass==1){
-        eventQuiz=rand()%100+80;
+        eventQuiz=rand()%100;
         if(eventQuiz>=80){
             printImage(19);
             printf("앗! 야생의 류청걸과 마주쳤다!\n");
